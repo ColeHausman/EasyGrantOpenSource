@@ -11,10 +11,13 @@ This is my undergraduate senior design project. EasyGrant is a fullstack webapp 
 **`oracledb` does not like arm macs which is why this project is dockerized in oraclelinux*
 
 ## Notable Features
-- NLP powered search bar that translates your search phrases into Oracle SQL and returns results sorted by relevancy.
+- NLP powered search bar that translates your search phrases into Oracle SQL and returns results sorted by relevancy
 - Admin Dashboard that allows admins to monitor, edit, delete, and approve user submitted research grants
 - Research Grant submission page that allows anyone to send admins research grants they've found
 - Multi-threaded web-scraper built with Puppeteer and Cheerioto to automatically update the database with new research grants
+
+The code for the webapp can be found in the `ezgrant` directory. \
+The code for the web-scraper can be found in the `automation` directory.
 
 ## Build
 If you want to run this app with your own database you can follow the steps below. \
