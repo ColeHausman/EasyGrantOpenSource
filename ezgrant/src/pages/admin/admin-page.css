@@ -1,0 +1,292 @@
+.admin-page {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background-color: #f8f9fd;
+}
+
+.admin-page-title {
+  margin-bottom: 20px;
+}
+
+input[name="uname"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.admin-login-submit {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.admin-login-submit:hover {
+  background: #6cf0c2;
+}
+
+.admin-signin-container {
+  background-color: #2596be;
+  color:#f5f5dc;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+/* Style for the Home button on the admin page */
+
+
+.admin-header {
+  background-color: #2596be;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f5f5dc;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(191, 92, 92, 0.1);
+  margin-bottom: 100px;
+  font-size: 22px;
+  top:0;
+}
+
+.site-logo {
+  margin-left: 20px;
+  vertical-align: middle; /* Add this line */
+  cursor: pointer;
+}
+
+.action-buttons {
+  vertical-align: middle; /* Add this line */
+}
+
+.action-buttons a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #f5f5dc;
+}
+
+.action-buttons button {
+  color: #f0f0f0; /* Change to a color that contrasts well with the background */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.action-buttons .ant-dropdown-link{
+  color: #f5f5dc; /* Change to a color that contrasts well with the background */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.action-buttons .ant-dropdown-link:hover{
+  background-color: #45a049; /* Slightly darker shade for hover effect */
+  color: #ffffff; /* Optional: Change text color on hover */
+}
+
+.action-buttons button:hover {
+  background-color: #45a049; /* Slightly darker shade for hover effect */
+  color: #ffffff; /* Optional: Change text color on hover */
+}
+
+
+.expanded-row {
+  overflow: hidden; /* Ensure content doesn't overflow during animation */
+  transition: height 0.5s ease; /* Adjust the duration and easing as needed */
+}
+
+.row-button {
+  background-color: white;
+  border: 1px solid rgb(90, 89, 89);
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 4px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.row-button:hover {
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+.title-column {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 280px;
+  width: 280px;
+}
+
+.amount-column {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70px; /* Set a max-width if needed */
+}
+
+.deadline-column {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* Set a max-width if needed */
+}
+
+.eligibility-column {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* Set a max-width if needed */
+}
+
+.date-submitted-column {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* Set a max-width if needed */
+}
+
+.description-column {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* Set a max-width if needed */
+}
+
+.actions-column {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+.expanded-row .title-column {
+  white-space: normal; /* Allow line breaks */
+  overflow: visible; /* Allow vertical overflow */
+  text-overflow: clip; /* No ellipsis */
+  vertical-align: top; 
+  max-width: 280px;
+  width: 280px;
+}
+
+.expanded-row .amount-column {
+  white-space: normal; /* Allow line breaks */
+  overflow: visible; /* Allow vertical overflow */
+  text-overflow: clip; /* No ellipsis */
+  vertical-align: top; 
+  max-width: 70px;
+}
+
+.expanded-row .deadline-column {
+  white-space: normal; /* Allow line breaks */
+  overflow: visible; /* Allow vertical overflow */
+  text-overflow: clip; /* No ellipsis */
+  vertical-align: top; 
+  max-width: 120px;
+}
+
+.expanded-row .eligibility-column {
+  white-space: normal; /* Allow line breaks */
+  overflow: visible; /* Allow vertical overflow */
+  text-overflow: clip; /* No ellipsis */
+  vertical-align: top; 
+  max-width: 120px;
+}
+
+.expanded-row .date-submitted-column {
+  white-space: normal; /* Allow line breaks */
+  overflow: visible; /* Allow vertical overflow */
+  text-overflow: clip; /* No ellipsis */
+  vertical-align: top; 
+  max-width: 120px;
+}
+
+.expanded-row .description-column {
+  white-space: normal; /* Allow line breaks */
+  overflow: visible; /* Allow vertical overflow */
+  text-overflow: clip; /* No ellipsis */
+  vertical-align: top; 
+  max-width: 120px;
+}
+
+.expanded-row .actions-column {
+  white-space: normal; /* Allow line breaks */
+  overflow: visible; /* Allow vertical overflow */
+  text-overflow: clip; /* No ellipsis */
+  vertical-align: top; 
+  width: 200px;
+}
+
+.expanded-card {
+  font-family: 'Arial', sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.grant-field {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.grant-field-name {
+  flex: 1;
+  font-weight: bold;
+  color: #1890ff; /* Adjust the color as needed */
+}
+
+.grant-field-value {
+  flex: 2;
+  color: #555; /* Adjust the color as needed */
+  word-break: break-all;
+  white-space: normal;
+}
+
+.ellipsis-text {
+  flex: 2;
+  color: #555; /* Adjust the color as needed */
+  word-break: break-all;
+  white-space: normal;
+}
+
+.toggle-switch {
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 20px;
+}

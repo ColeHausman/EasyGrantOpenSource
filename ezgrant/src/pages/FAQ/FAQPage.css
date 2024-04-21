@@ -1,0 +1,38 @@
+/* General styling for the FAQ page */
+.faq-page {
+    margin-top: 100px; /* Adjust based on your header height */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark gray for readability */
+    max-width: 800px; /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for each FAQ item */
+.faq-item {
+    background-color: #f8f8f8; /* Light background for FAQ items */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h2 {
+    color: #004d40; /* Dark teal color */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    line-height: 1.6; /* Improve readability */
+    color: #666; /* Slightly lighter color for the text */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .faq-page {
+        padding: 10px;
+    }
+}

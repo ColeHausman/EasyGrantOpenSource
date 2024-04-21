@@ -1,0 +1,167 @@
+.grant-card {
+  border: 1px solid #ffffff;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  margin: 0 auto;
+  width: 80%;
+  background-color: rgba(142, 154, 12, 0.036);
+  overflow: hidden;
+}
+
+.grant-card__content {
+  position: relative;
+}
+
+.grant-card--collapsed {
+  max-height: auto;
+}
+
+.grant-card--expanded {
+  max-height: none;
+}
+
+.grant-card__header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-weight: bold;
+  position: relative;
+}
+
+.grant-card__title {
+  grid-column: 1 / 2;
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word;
+  max-width: 100%; /* Adjust as needed */
+}
+
+.grant-card__deadline {
+  grid-column: 2 / 3;
+  max-width: 200px;
+  margin-left: 20px;
+}
+
+.location-col {
+  grid-column: 3 / 4;
+  max-width: 190px; /* Adjust as needed */
+}
+
+.grant-card__location{
+  margin-bottom: 20px;
+}
+
+.grant-card__amount {
+  font-weight: normal;
+}
+
+.column-four {
+  grid-column: 4 / 5;
+  max-width: 300px;
+}
+
+.grant-card__about {
+  margin-bottom: 0px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  margin-top: auto;
+  font-weight: normal;
+  transition: max-height 0.3s ease; /* Add a transition for a smooth animation */
+}
+
+.grant-card__about--expanded {
+  max-height: none;
+  -webkit-line-clamp: initial;
+}
+
+.grant-action-links {
+  grid-column: 1 / -1; /* Span full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.grant-card__eligibility {
+  margin-bottom: 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.grant-card__eligibility--collapsed {
+  max-width: 100%; /* Set your desired maximum width */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Styles for individual tags */
+.ant-tag {
+  margin-bottom: 0px; /* Adds spacing between rows of tags if they wrap */
+  max-height: 25px !important;
+  flex: 0 0 auto;
+}
+
+/* Style adjustments for the 'Free to Apply' checkbox */
+.grant-card__free-to-apply {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .grant-card__header {
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-rows: auto auto auto auto; /* Each row for title, deadline, location, and about */
+  }
+  .grant-card__eligibility,
+  .grant-card__free-to-apply {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grant-card__title,
+  .grant-card__deadline,
+  .grant-card__location,
+  .grant-card__about {
+    grid-column: 1 / -1;
+  }
+
+  .grant-card__about {
+    order: 4; /* Adjust the order as needed for mobile */
+  }
+}
+
+.grant-card__read-more {
+  display: inline-block;
+  position: absolute;
+  margin-top: 0px; /* Add default margin */
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: normal;
+  font-size: 14px !important;
+  color: inherit;
+  margin-left: 0;
+}
+
+.grant-card--expanded .grant-card__read-more {
+  margin-top: 0px; /* Adjust as needed for the expanded state */
+}
+
+.grant-card__read-more::after {
+  content: ""; /* Required for the pseudo-element to appear */
+  position: absolute;
+  bottom: 7px;
+  left: 0;
+  width: 100%;
+  height: 1px; /* Adjust the height to control the thickness of the underline */
+  background-color: black; /* Set the color of the underline */
+}

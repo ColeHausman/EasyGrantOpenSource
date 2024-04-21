@@ -1,0 +1,106 @@
+.post-grants-header {
+  background-color: #90ee90;
+  color: #f5f5dc;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  height: 70px;
+  width: 100%;
+  top:0;
+}
+
+.post-grants-header .home-site-logo {
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #f5f5dc;
+}
+
+.action-buttons Button {
+  font-size: 20px; /* Adjust the font size as needed */
+  border: none;
+  background: none;
+  color:#f5f5dc;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+  .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr; /* Adjust the width of each column as needed */
+    gap: 0px !important; /* Adjust the gap as needed */
+    padding: 0 150px; /* Adjust the padding as needed */
+    box-sizing: border-box;
+    padding-left: 15%;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item {
+    margin-bottom: 16px; /* Adjust the margin as needed */
+}
+
+.custom-select{
+  font-family: 'Georgia', serif;
+  font-size: 12px; 
+  border-radius: 0 !important; /* Square corners */
+  width: 300px !important;/* Adjust the width as needed */
+  padding-right: 24px !important;
+}
+
+.custom-select .ant-select-selector{
+  font-family: 'Georgia', serif;
+  font-size: 12px; 
+  border-radius: 0 !important; /* Square corners */
+  width: 300px !important;
+  padding-right: 24px !important;
+}
+
+.custom-select .ant-select-selector .ant-select-selection-search-input {
+  font-family: 'Georgia', serif;
+  font-size: 12px; 
+  border-radius: 0 !important;
+}
+
+.custom-input {
+  font-family: 'Georgia', serif !important;
+  font-size: 12px; 
+  min-height: 40px;
+  width: 300px !important; 
+  border-radius: 0 !important; 
+}
+
+/* Additional style for the TextArea */
+.custom-text-area {
+  font-family: 'Georgia', serif;
+  font-size: 12px; 
+  width: 400px !important; 
+  border-radius: 0 !important;
+}
+
+.square-radio-group .square-radio {
+  border-radius: 0 !important;
+}
+
+.check-icon {
+  margin-right: 8px; /* Adjust spacing as needed */
+  color: #1890ff; /* Change the color as needed */
+}
+
+.custom-radio {
+  margin-bottom: 8px; /* Adjust spacing between radio buttons */
+}
+
+.post-grant-title {
+  margin-top: 110px;
+  text-align: center; /* Center the text */
+  padding-bottom: 20px; /* Adjust the padding as needed */
+  position: relative;
+  text-align: center;
+  margin-bottom: 10px;
+}

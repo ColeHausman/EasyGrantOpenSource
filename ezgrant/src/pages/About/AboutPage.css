@@ -1,0 +1,91 @@
+/* General styling for the about-page */
+.about-page {
+    margin-top: 100px; /* Adjust based on your header height */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f8f8f8; /* Light background for the hero section */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    color: #004d40; /* Dark teal color */
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Mission Statement */
+.mission-statement {
+    margin-bottom: 20px;
+}
+
+.mission-statement h2 {
+    font-size: 2em;
+    color: #00695c; /* Slightly lighter teal */
+    margin-bottom: 10px;
+}
+
+/* Problem and Solution Section */
+.problem-solution h2 {
+    font-size: 1.8em;
+    color: #00796b; /* Teal color */
+    margin-top: 20px;
+}
+
+/* Key Features */
+.features {
+    background-color: #e0f2f1; /* Very light teal background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.features h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.features ul {
+    list-style: inside square; /* Stylish list item markers */
+}
+
+.features li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Team Information */
+.team-info {
+    margin-top: 30px;
+}
+
+.team-info h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.team-info p {
+    font-size: 1.1em;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .about-page {
+        padding: 10px;
+    }
+
+    .hero-section, .features {
+        padding: 20px;
+    }
+}
